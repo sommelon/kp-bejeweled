@@ -33,3 +33,14 @@ CREATE TABLE public.score
     playedon date,
     CONSTRAINT score_pkey PRIMARY KEY (id)
 );
+
+
+-- DROP TABLE public."user";
+
+CREATE TABLE public."user"
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 0 MINVALUE 0 MAXVALUE 999999 CACHE 1 ),
+    username character varying COLLATE pg_catalog."default",
+    passwd character varying COLLATE pg_catalog."default",
+    CONSTRAINT user_pkey PRIMARY KEY (id)
+);

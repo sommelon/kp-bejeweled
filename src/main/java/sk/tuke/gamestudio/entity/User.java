@@ -3,7 +3,6 @@ package sk.tuke.gamestudio.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "player")
 @NamedQueries({
         @NamedQuery(name = "User.login",
                 query = "SELECT u FROM User u WHERE u.username=:username AND u.passwd=:passwd"),
