@@ -1,0 +1,271 @@
+/**
+ * Copyright (c) 2014 Oracle and/or its affiliates. All rights reserved.
+ *
+ * You may not modify, use, reproduce, or distribute this software except in
+ * compliance with  the terms of the License at:
+ * http://java.net/projects/javaeetutorial/pages/BerkeleyLicense
+ */
+body {
+    font-size: 22px;
+    font-family: "Segoe UI";
+    text-align: justify;
+    /*background-image: url("../images/bejeweled/kralik/bg2.jpg");*/
+    background-image: url("../images/bejeweled/kralik/KPI.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    margin: 0 10vw 0 10vw;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #005c94;
+    margin-bottom: 10vh;
+    /*box-shadow: 30px 30px rgba(0, 0, 0, 0.5);*/
+    font-size: 1.2em;
+}
+
+main.container{
+    overflow: hidden;
+    padding: 50px;
+    color: #005c94;
+    /*background-color: rgba(0, 92, 147, 0.5);*/
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+    font-family: Arial, "Arial CE", "Helvetica CE", sans-serif;
+    font-size:  28px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    /* color: #045491; */
+}
+
+h2 {
+    font-family: Arial, "Arial CE", "Helvetica CE", sans-serif;
+    font-size:  22px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    /* color: #045491; */
+}
+a{
+    cursor: pointer;
+    color: #005c94;
+    text-decoration: none;
+}
+a:hover{
+    color: #007bff;
+    text-decoration: none;
+}
+.info>a{
+    margin-right: 20px;
+}
+.info>hr{
+    /*border-color: white;*/
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.center_content {
+    position: relative;
+    background-color: #e0e0e0;
+    padding: 5px;
+}
+
+.error-message {
+  color: #d20005;
+  font-family: 'New Century Schoolbook', serif;
+  font-style: oblique;
+  text-decoration: overline;
+}
+
+.field{
+    cursor: pointer;
+    display: inline;
+    float: left;
+}
+
+.field tr {
+    border-top: 3px solid rgba(0, 92, 147, 0.5);
+    /*border-top: 3px solid rgba(255, 255, 255, 1);*/
+}
+.field tr:first-child {
+    border-top: none;
+}
+
+.field td:first-child {
+    border-left: none;
+}
+
+.field td {
+    border-left: 3px solid rgba(0, 92, 147, 0.5);
+    /*border-left: 3px solid rgba(255, 255, 255, 1);*/
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.shape.hoverAnimation:hover{
+    animation: pulse 1s infinite;
+}
+
+.info{
+    display: inline;
+    float: right;
+}
+.info>div{
+    padding-bottom: 0.5em;
+}
+
+#message{
+    color: red;
+    max-width: 300px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.selected{
+    width: 30px;
+    height: 30px;
+}
+
+.shape{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    /* border-radius: 50%; */
+}
+
+.author{
+    display: inline;
+    margin-right: auto;
+}
+.date{
+    display: inline;
+    float: right;
+}
+
+.user{
+    display: inline;
+    float: right;
+    color: #005c94;
+}
+.logo{
+    display: inline;
+    float: left;
+}
+.logo img{
+    height: 90px;
+}
+
+.jumbotron{
+    /* background-color: rgba(0, 92, 147, 0.5); */
+    background-color: rgba(0, 92, 147, 0.5);
+    color: white;
+    border-radius: 0;
+}
+
+nav.jumbotron{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1em 1em 5em 1em;
+}
+nav a{
+    color: #007bff;
+}
+nav a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.comments{
+    float: left;
+}
+
+.scores{
+    float: right;
+}
+.scores, .comments{
+    display: inline;
+    font-size: .8em;
+    box-shadow: 30px 30px rgba(0, 0, 0, 0.5);
+    width: 500px
+}
+
+.scores table{
+    color: white;
+}
+
+.scores td,th{
+    padding: 10px;
+}
+.comment hr{
+    border-top: 1px solid #ffffff;
+}
+.upperPart{
+    display: inline-flex;
+    color: #005c94;
+}
+.upperPart>div{
+    margin-right: 20px;
+
+}
+
+.timer{
+    display: inline;
+    float: left;
+    font-size: 2em;
+    width: 86px;
+    text-align: center;
+}
+.options{
+    display: inline-block;
+}
+.score{
+    font-size: 1.3em;
+}
+#next{
+    display: inline;
+    margin-left: 10px;
+}
+
+.hoverRed:hover{
+    color: red;
+}
+.hoverGreen:hover{
+    color: green;
+}
+
+.form-control#rate{
+    display: inline-block;
+    width: 220px;
+}
+
+.comments form{
+    margin-bottom: 80px;
+}
+.comments form textarea{
+    margin-bottom: 10px;
+}
+.btn:disabled{
+    opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+      width: 40px;
+      height: 40px;
+  }
+  50% {
+      width: 44px;
+      height: 44px;
+  }
+  100% {
+      width: 40px;
+      height: 40px;
+  }
+}
