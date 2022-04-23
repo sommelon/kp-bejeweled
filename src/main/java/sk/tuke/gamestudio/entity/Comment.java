@@ -1,9 +1,6 @@
 package sk.tuke.gamestudio.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -11,8 +8,8 @@ import java.util.Date;
         query = "SELECT c FROM Comment c WHERE c.game=:game ORDER BY c.commentedOn DESC")
 public class Comment {
     @Id
-    @GeneratedValue
-    private int ident;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     private String player;
     private String game;

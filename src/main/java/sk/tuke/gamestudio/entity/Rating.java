@@ -14,8 +14,8 @@ import java.util.Date;
 })
 public class Rating {
     @Id
-    @GeneratedValue
-    private int ident;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     private String player;
     private String game;

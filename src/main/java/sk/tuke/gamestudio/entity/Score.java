@@ -1,9 +1,6 @@
 package sk.tuke.gamestudio.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -12,9 +9,8 @@ import java.util.Date;
         query = "SELECT s FROM Score s WHERE s.game=:game ORDER BY s.points DESC")
 public class Score implements Serializable, Comparable<Score> {
     @Id
-    @GeneratedValue
-    private int ident;
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     private String game;
     private String username;
@@ -62,12 +58,12 @@ public class Score implements Serializable, Comparable<Score> {
         this.playedOn = playedOn;
     }
 
-    public int getIdent() {
-        return ident;
+    public int getId() {
+        return id;
     }
 
-    public void setIdent(int ident) {
-        this.ident = ident;
+    public void setId(int ident) {
+        this.id = ident;
     }
 
     @Override

@@ -3,3 +3,4 @@ target
 *.class
 src.zip
 .idea
+gamestudio.iml
